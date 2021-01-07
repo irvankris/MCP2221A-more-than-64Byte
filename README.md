@@ -81,7 +81,9 @@ Perintah pertama (first chunk) adalah dikirim sebanyak 60 byte dari total perint
 namun data length adalah total keseluruhan data yang akan dikirim (misalnya 72 byte/0x48 ). 
 Segera (perlu time.sleep) setelah pengiriman pertama, dilanjutkan dengan pengiriman byte sisa nya,
 
-Hal penting yang bisa menjadi kunci sukses adalah ukuran dari time.sleep.
+Hal penting yang mungkin mempengaruhi kesuksesan kirim-terima-lebihdari-64byte adalah:
+<br> kemampuan/fitur dari I2C device untuk kirim/terima data terpisah-pisah (chunk)
+<br> serta trial-error nilai dari time.sleep.
 
 pada Python Code yang saya buat, saya mengambil beberapa code pada  
 

@@ -9,6 +9,7 @@ dengan Kirim-Terima lebih dari 64 byte.
 </p>
 
 modul yang saya gunakan : Adafruit MCP2221A Breakout - General Purpose USB to GPIO ADC I2C - Stemma QT / Qwiic
+
 [Adafruit MCP2221A Breakout link] (https://www.adafruit.com/product/4471)
 
 # Latar belakang:

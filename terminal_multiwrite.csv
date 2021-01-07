@@ -1,0 +1,8 @@
+True,I2C,8 bit,C0,Write,,"00,00,00,00",,,wake,Send
+True,I2C,8 bit,C1,Read,,"4",,,get 4 byte wake response,Send
+True,I2C,8 bit,C0,Write,,"03,07,02,80,00,00,09,ad",,10,,Send
+True,I2C,8 bit,C1,Read,,"200",,,,Send
+True,I2C,8 bit,C0,Write,,"00,00,00,00,00",,,wake,Send
+True,I2C,8 bit,C1,Read,,"4",,,,Send
+True,I2C,8 bit,C0,Write,,"03,47,16,23,00,00,2b,7e,15,16,28,ae,d2,a6,ab,f7,15,88,09,cf,4f,3c,6b,e1,63,d4,2b,62,3e,70,d1,64,fa,14,5d,b1,d4,63,70,58,71,0b,58,e1,e6,65,d3,d2,f5,b4,65,17,64,03,11,44,43,fa,8e,96,14,84,5e,c7,29,6c,d1,3b,c9,dc,64,52",,10,,Send
+True,I2C,8 bit,C1,Read,,"200",,,,Send

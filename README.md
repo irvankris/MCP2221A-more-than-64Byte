@@ -21,7 +21,7 @@ serta saat ini konektivitas USB banyak diterapkan pada perangkat PC/SBC/USB-OTG-
 dalam standard USB-HID, maksimum kirim-terima data adalah 64 byte. 
 Padahal terkadang kita memerlukan kirim terima data lebih dari 64 byte.
 Saya mencari di banyak forum dan github, untuk kirim terima data lebih dari 64 byte pada HID, 
-selalu tidak ada contoh yang berhasil.
+belum menemukan contoh yang berhasil.
 
 # Titik terang ... 
 Dalam datasheet MCP2221A dituliskan bahwa datalength maksimum adalah 0xFF. 

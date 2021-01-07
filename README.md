@@ -1,8 +1,8 @@
 # MCP2221A-more-than-64Byte
 
 
-# Akses python ke I2C device menggunakan USB HID I2C, MCP2221A
-# dengan Kirim-Terima lebih dari 64 byte.
+Akses python ke I2C device menggunakan USB HID I2C, MCP2221A
+dengan Kirim-Terima lebih dari 64 byte.
 
 <p align="center">
   <img src="img/Gambar01.png">
@@ -17,16 +17,21 @@ implementasi I2C device tidak perlu "membongkar" perangkat Host (antara lain sol
 serta saat ini konektivitas USB banyak diterapkan pada perangkat PC/SBC/USB-OTG-smartphone
 
 # tantangan:
-dalam standard USB-HID, maksimum kirim-terima data adalah 64 byte. Padahal terkadang kita memerlukan kirim terima data lebih dari 64 byte.
-Saya mencari di banyak forum dan github, untuk kirim terima data lebih dari 64 byte pada HID, selalu tidak ada contoh yang berhasil.
+dalam standard USB-HID, maksimum kirim-terima data adalah 64 byte. 
+Padahal terkadang kita memerlukan kirim terima data lebih dari 64 byte.
+Saya mencari di banyak forum dan github, untuk kirim terima data lebih dari 64 byte pada HID, 
+selalu tidak ada contoh yang berhasil.
 
 # Titik terang ... 
 Dalam datasheet MCP2221A dituliskan bahwa datalength maksimum adalah 0xFF. 
 setelah kirim data, bila mana datalength lebih dari 60byte, 
 maka "SubSequent I2C Write Data Commands will transport the reminder of the user data- till requested length ".
 
-Serta saya telah berhasil dalam mengirimkan data lebih dari 60byte, dengan menggunakan utility tool, MCP2221 I2C SMBUS terminal.
+Serta saya telah berhasil dalam mengirimkan data lebih dari 60byte, 
+dengan menggunakan utility tool, MCP2221 I2C SMBUS terminal.
+
 file perintah MCP2221 I2C SMBUS terminal dapat diimport pada file Terminal_multiwrite.csv.
+
 hasil capture logic analyzer pada file Terminal_Multiwrite.sr .
 
 hasil capture logic analyzer dapat dibuka menggunakan aplikasi PulseView.

@@ -2,7 +2,7 @@
 
 
 Akses python ke I2C device menggunakan USB HID I2C, MCP2221A
-<br>dengan Kirim-Terima lebih dari 64 byte (termasuk 4 byte overhead, atau 60 byte netto)
+<br>dengan Kirim-Terima lebih dari 64 byte (termasuk 4 byte overhead dan 60 byte-data-length-netto)
 
 <p align="center">
   <img src="img/Gambar01.png">
